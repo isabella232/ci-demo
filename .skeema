@@ -1,3 +1,11 @@
 [production]
 host=127.0.0.1
 flavor=mysql:5.7
+
+# Example of how to configure errors vs warnings, and configure specific
+# problem detectors.
+# Putting this here will affect all subdirs (so all schemas), but it can be
+# overridden in subdirs if desired.
+errors=bad-charset,bad-engine
+warnings=   # override the default with an empty value, effectively removing detection of other problems
+allow-charset=utf8mb4
