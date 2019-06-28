@@ -1,0 +1,9 @@
+Copyright (C) 2007,2008, MySQL AB
+Original data created by Fusheng Wang and Carlo Zaniolo
+http://www.cs.aau.dk/TimeCenter/software.htm
+http://www.cs.aau.dk/TimeCenter/Data/employeeTemporalDataSet.zip
+
+Schema by Giuseppe Maxia 
+Data conversion from XML to relational by Patrick Crews
+
+This work is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License.

@@ -1,0 +1,22 @@
+# Example of how to use different schema names based on environment name
+# e.g. `skeema diff development` --> schema name of employees_dev
+#
+# If no environment is specified, e.g. `skeema diff`, the default is production.
+# (The CI system also uses production, but schema names are irrelevant there.)
+
+# Top-level config applies to all environments (but can optionally be overridden
+# in specific environments)
+default-character-set=latin1
+default-collation=latin1_swedish_ci
+
+# Configuration applying to production environment
+[production]
+schema=employees_prod
+
+# Configuration applying to staging environment
+[staging]
+schema=employees_stage
+
+# Configuration applying to development environment
+[development]
+schema=employees_dev
