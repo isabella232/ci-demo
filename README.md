@@ -6,7 +6,7 @@ To get an idea of the pull request schema change workflow, first browse the [exa
 
 ## Interactive demo 1
 
-Since the CI application is already enabled here on https://github.com/skeema/ci-demo/pulls, you can simply submit a pull request to the upstream repo and see the CI system in action!
+Since the CI application is already enabled here on https://github.com/skeema/ci-demo, you can simply submit a pull request to the upstream repo and see the CI system in action!
 
 1. Fork this repo to your own account.
 2. Edit or add any file; commit; push to GitHub
