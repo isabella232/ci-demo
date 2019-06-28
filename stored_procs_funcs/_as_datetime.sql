@@ -6,12 +6,9 @@ CREATE DEFINER=`root`@`localhost` FUNCTION `_as_datetime`(txt TINYTEXT) RETURNS 
     COMMENT 'Convert given text to DATETIME or NULL.'
 BEGIN
   declare continue handler for SQLEXCEPTION return NULL;
-  
-  
-  
-  if txt RLIKE '^[0-9]{10}$' then
-    return NULL;
-  end if;
-  RETURN (txt + interval 0 second);
+  IF txt RLIKE '^[0-9]{10}$' THEN
+    RETURN NULL;
+  END IF;
+  RETURN txt + INTERVAL 0 SECOND;
 END//
 DELIMITER ;
